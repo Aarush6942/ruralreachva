@@ -644,6 +644,7 @@ body {
 .kit-section-title {
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
     color: var(--secondary);
     margin-bottom: 2rem;
     text-align: center;
@@ -653,6 +654,7 @@ body {
 
 .supplies-title {
     font-size: 1.5rem;
+    text-align: center;
     font-weight: 600;
     color: var(--primary);
     margin-bottom: 1rem;
@@ -665,6 +667,7 @@ body {
     margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .supplies-grid {
@@ -714,6 +717,7 @@ body {
 .special-kits-title {
     font-size: 1.5rem;
     font-weight: 600;
+    text-align: center;
     color: var(--primary);
     margin-bottom: 1rem;
 }
@@ -721,6 +725,7 @@ body {
 .special-kits-description {
     color: var(--muted-foreground);
     margin-bottom: 2rem;
+    text-align: center;
     font-size: 1.1rem;
 }
 
@@ -817,4 +822,49 @@ body {
     .kit-section-title {
         font-size: 1.5rem;
     }
+}
+.add-to-medkit-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    margin-top: 3rem;
+}
+.add-to-medkit-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+.add-to-medkit-section .section-title {
+    color: white;
+    margin-bottom: 1rem;
+}
+.add-to-medkit-section .section-subtitle {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+}
+.suggestion-link-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.suggestion-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: white;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.suggestion-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.suggestion-link i {
+    font-size: 1.25rem;
 }
