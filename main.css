@@ -868,3 +868,63 @@ body {
 .suggestion-link i {
     font-size: 1.25rem;
 }
+.mission-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(42, 157, 143, 0.05), rgba(100, 194, 183, 0.05));
+    margin: 3rem 0;
+}
+.mission-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+.mission-section .section-title {
+    margin-bottom: 2rem;
+    position: relative;
+}
+.mission-section .section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+.mission-text {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    box-shadow: 0 8px 25px rgba(42, 157, 143, 0.1);
+    border: 1px solid rgba(42, 157, 143, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+.mission-text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+}
+.mission-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--foreground);
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+.mission-text p:last-child {
+    margin-bottom: 0;
+}
+.mission-text p:first-child::first-letter {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    float: left;
+    line-height: 1;
+    margin: 0.1rem 0.5rem 0 0;
+    font-family: serif;
+}
